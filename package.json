@@ -2,7 +2,6 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/Synhalen/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Synhalen/frontend-project-lvl1/actions)",
-  "main": "index.js",
   "type": "module",
   "bin": {
     "brain-games": "bin/brain-games.js"
@@ -11,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type": "git", 
+    "type": "git",
     "url": "git+https://github.com/Synhalen/frontend-project-lvl1.git"
   },
   "author": "",
@@ -19,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Synhalen/frontend-project-lvl1/issues"
   },
-  "homepage": "https://github.com/Synhalen/frontend-project-lvl1#readme"
+  "homepage": "https://github.com/Synhalen/frontend-project-lvl1#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
