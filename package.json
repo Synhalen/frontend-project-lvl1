@@ -20,6 +20,9 @@
   },
   "homepage": "https://github.com/Synhalen/frontend-project-lvl1#readme",
   "dependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.2",
     "readline-sync": "^1.4.10"
   }
 }
