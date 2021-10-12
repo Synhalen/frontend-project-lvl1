@@ -6,3 +6,9 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
 
 ![lint](https://github.com/Synhalen/frontend-project-lvl1/actions/workflows/lint.yml/badge.svg)
+
+## Brain Even
+[![asciicast](https://asciinema.org/a/441614.svg)](https://asciinema.org/a/441614)
+
+## Brain Calc
+[![asciicast](https://asciinema.org/a/441612.svg)](https://asciinema.org/a/441612)
