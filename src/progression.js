@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { run } from './cli.js';
+import run from './cli.js';
 
 const MAX_FIRST_NUMBER = 50;
 const MAX_STEP_NUMBER = 5;
@@ -27,7 +27,7 @@ function getCorrectAnswer(firstNumber, stepNumber, hiddenNumber) {
   return firstNumber + (hiddenNumber - 1) * stepNumber;
 }
 
-export function progressionGame() {
+export default function progressionGame() {
   const name = run();
   console.log('What number is missing in the progression?');
   for (let i = 0; i < 3; i += 1) {

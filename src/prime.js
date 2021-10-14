@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { run } from './cli.js';
+import run from './cli.js';
 
 const MAX_GUESS_NUMBER = 100;
 
@@ -16,7 +16,7 @@ function getCorrectAnswer(num) {
   return 'yes';
 }
 
-export function primeGame() {
+export default function primeGame() {
   const name = run();
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
   for (let i = 0; i < 3; i += 1) {

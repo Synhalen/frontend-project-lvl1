@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { run } from './cli.js';
+import run from './cli.js';
 
 const MAX_GUESS_NUMBER = 30;
 
@@ -16,7 +16,7 @@ const getCorrectAnswer = (a, b) => {
   }
 };
 
-export function gcdGame() {
+export default function gcdGame() {
   const name = run();
   console.log('Find the greatest common divisor of given numbers');
   for (let i = 0; i < 3; i += 1) {

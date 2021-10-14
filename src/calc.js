@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { run } from './cli.js';
+import run from './cli.js';
 
 const MAX_GUESS_NUMBER = 10;
 const MAX_OPERATOR_NUMBER = 3;
@@ -28,7 +28,7 @@ const getCorrectAnswer = (a, b, op) => {
   return a * b;
 };
 
-export function calcGame() {
+export default function calcGame() {
   const name = run();
   console.log('What is the result of the expression?');
   for (let i = 0; i < 3; i += 1) {

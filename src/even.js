@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { run } from './cli.js';
+import run from './cli.js';
 
 const MAX_GUESS_NUMBER = 5000;
 
@@ -9,7 +9,7 @@ function getRandomNumber(max = MAX_GUESS_NUMBER) {
 
 const getCorrectAnswer = (n) => (n % 2 === 0 ? 'yes' : 'no');
 
-export function evenGame() {
+export default function evenGame() {
   const name = run();
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   for (let i = 0; i < 3; i += 1) {
