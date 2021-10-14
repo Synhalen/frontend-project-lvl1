@@ -10,30 +10,31 @@ function getRandomNumber(max) {
 }
 
 function getProgressionString(firstNumber, stepNumber, hiddenNumber) {
+  let currentNumber = firstNumber;
   let mathProgression = '';
-  for (let i = 1; i <= MAX_HIDDEN_NUMBER; i++) {
+  for (let i = 1; i <= MAX_HIDDEN_NUMBER; i += 1) {
     if (i === hiddenNumber) {
-      mathProgression += `.. `
+      mathProgression += '..';
     } else {
-      mathProgression += `${firstNumber} `
+      mathProgression += `${currentNumber} `;
     }
-    firstNumber += stepNumber;
+    currentNumber += stepNumber;
   }
   return mathProgression;
 }
 
-const getCorrectAnswer = (firstNumber, stepNumber, hiddenNumber) => {
+function getCorrectAnswer(firstNumber, stepNumber, hiddenNumber) {
   return firstNumber + (hiddenNumber - 1) * stepNumber;
-};
+}
 
 export function progressionGame() {
   const name = run();
   console.log('What number is missing in the progression?');
   for (let i = 0; i < 3; i += 1) {
-    let firstNumber = getRandomNumber(MAX_FIRST_NUMBER);
-    let stepNumber = 2 + getRandomNumber(MAX_STEP_NUMBER);
-    let hiddenNumber = 1 + getRandomNumber(MAX_HIDDEN_NUMBER);
-    let mathProgression = getProgressionString(firstNumber, stepNumber, hiddenNumber);
+    const firstNumber = getRandomNumber(MAX_FIRST_NUMBER);
+    const stepNumber = 2 + getRandomNumber(MAX_STEP_NUMBER);
+    const hiddenNumber = 1 + getRandomNumber(MAX_HIDDEN_NUMBER);
+    const mathProgression = getProgressionString(firstNumber, stepNumber, hiddenNumber);
     console.log(`Question: ${mathProgression}`);
     const answer = readlineSync.question('Your answer: ');
     const correctAnswer = getCorrectAnswer(firstNumber, stepNumber, hiddenNumber);
