@@ -7,11 +7,14 @@
 
 ![lint](https://github.com/Synhalen/frontend-project-lvl1/actions/workflows/lint.yml/badge.svg)
 
-## Brain Even
+## Brain Even 
 [![asciicast](https://asciinema.org/a/441614.svg)](https://asciinema.org/a/441614)
 
-## Brain Calc
+## Brain Calc 
 [![asciicast](https://asciinema.org/a/441612.svg)](https://asciinema.org/a/441612)
 
 ## Brain Gcd
 [![asciicast](https://asciinema.org/a/441622.svg)](https://asciinema.org/a/441622)
+
+## Brain Progression 
+[![asciicast](https://asciinema.org/a/442159.svg)](https://asciinema.org/a/442159)
