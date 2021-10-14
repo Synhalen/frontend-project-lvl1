@@ -8,7 +8,7 @@ extends:
 
 parserOptions:
   ecmaVersion: 11
-  sourceType: module
+  sourceType: module 
 
 rules:
   no-console: 0
